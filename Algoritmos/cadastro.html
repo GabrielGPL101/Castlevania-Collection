@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Castlevania Collection | Cadastro
+        </title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="conteudo conteudoCabecalho">
+                <a class="marca" href="index.html">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </a>
+                <div class="menuNavegacao">
+                    <a href="index.html">
+                        Início
+                    </a>
+                    <a class="linkAtivo" href="cadastro.html" aria-current="page">
+                        Cadastro
+                    </a>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </div>
+                <div class="usuario">
+                    <span class="iconeUsuario" aria-hidden="true">
+                    </span>
+                    <span>
+                        Visitante
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main class="conteudo paginaCadastro">
+            <div>
+                <div id="personagens">
+                    <div class="tituloSecao">
+                        <p class="destaque">
+                            COMECE SUA JORNADA
+                        </p>
+                        <h1>
+                            Escolha seu personagem
+                        </h1>
+                        <p class="descricaoSecao">
+                            Selecione um protagonista para representar você na coleção.
+                        </p>
+                    </div>
+                    <div class="listaPersonagens">
+                        <div class="opcaoPersonagem">
+                            <input class="seletorPersonagem" type="radio" id="iptAlucard" name="personagemEscolhido" value="Alucard" onchange="personagemEscolhido = 'Alucard'">
+                            <label class="cartaoPersonagem" for="iptAlucard">
+                                <span class="retratoPersonagem">
+                                    <img class="imagemPersonagem" src="imagens/alucard.png" alt="">
+                                </span>
+                                <span class="nomePersonagem">
+                                    Alucard
+                                </span>
+                                <span class="jogoPersonagem">
+                                    SYMPHONY OF THE NIGHT
+                                </span>
+                            </label>
+                        </div>
+                        <div class="opcaoPersonagem">
+                            <input class="seletorPersonagem" type="radio" id="iptNathan" name="personagemEscolhido" value="Nathan Graves" onchange="personagemEscolhido = 'Nathan Graves'">
+                            <label class="cartaoPersonagem" for="iptNathan">
+                                <span class="retratoPersonagem">
+                                    <img class="imagemPersonagem" src="imagens/nathan.png" alt="">
+                                </span>
+                                <span class="nomePersonagem">
+                                    Nathan Graves
+                                </span>
+                                <span class="jogoPersonagem">
+                                    CIRCLE OF THE MOON
+                                </span>
+                            </label>
+                        </div>
+                        <div class="opcaoPersonagem">
+                            <input class="seletorPersonagem" type="radio" id="iptJuste" name="personagemEscolhido" value="Juste Belmont" onchange="personagemEscolhido = 'Juste Belmont'">
+                            <label class="cartaoPersonagem" for="iptJuste">
+                                <span class="retratoPersonagem">
+                                    <img class="imagemPersonagem" src="imagens/juste.png" alt="">
+                                </span>
+                                <span class="nomePersonagem">
+                                    Juste Belmont
+                                </span>
+                                <span class="jogoPersonagem">
+                                    HARMONY OF DISSONANCE
+                                </span>
+                            </label>
+                        </div>
+                        <div class="opcaoPersonagem">
+                            <input class="seletorPersonagem" type="radio" id="iptSoma" name="personagemEscolhido" value="Soma Cruz" onchange="personagemEscolhido = 'Soma Cruz'">
+                            <label class="cartaoPersonagem" for="iptSoma">
+                                <span class="retratoPersonagem">
+                                    <img class="imagemPersonagem" src="imagens/soma.png" alt="">
+                                </span>
+                                <span class="nomePersonagem">
+                                    Soma Cruz
+                                </span>
+                                <span class="jogoPersonagem">
+                                    ARIA OF SORROW
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="painel painelCadastro">
+                    <p class="destaque">
+                        SEUS DADOS
+                    </p>
+                    <h2>
+                        Complete seu cadastro
+                    </h2>
+                    <p class="descricaoFormulario">
+                        Preencha os campos abaixo.
+                    </p>
+                    <label class="rotuloCampo" for="iptApelido">
+                        Apelido
+                    </label>
+                    <input class="campoFormulario" id="iptApelido" type="text" maxlength="100" placeholder="Seu apelido">
+                    <p class="ajuda">
+                        De 3 a 100 caracteres: letras sem acento, números e sublinhado.
+                    </p>
+                    <label class="rotuloCampo" for="iptEmail">
+                        E-mail
+                    </label>
+                    <input class="campoFormulario" id="iptEmail" type="email" placeholder="seu@email.com">
+                    <label class="rotuloCampo" for="iptSenha">
+                        Senha
+                    </label>
+                    <input class="campoFormulario" id="iptSenha" type="password" autocomplete="off" placeholder="Pelo menos 8 caracteres">
+                    <label class="rotuloCampo" for="iptConfirmacao">
+                        Confirmação de senha
+                    </label>
+                    <input class="campoFormulario" id="iptConfirmacao" type="password" autocomplete="off" placeholder="Repita sua senha">
+                    <div id="divMensagem" class="mensagem" aria-live="polite">
+                    </div>
+                    <button class="botao botaoLargo" type="button" onclick="validarCadastro()">
+                        Cadastrar
+                    </button>
+                    <p class="rodapeFormulario">
+                        Já tem uma conta?
+                        <a href="login.html">
+                            Ir para login
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <div class="conteudo conteudoRodape">
+                <span class="marca">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </span>
+                <p>
+                    Gabriel Pereira Lima · SPTech · 2026
+                </p>
+            </div>
+        </footer>
+        <script src="js/validacoes.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Castlevania Collection | Login
+        </title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="conteudo conteudoCabecalho">
+                <a class="marca" href="index.html">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </a>
+                <div class="menuNavegacao">
+                    <a href="index.html">
+                        Início
+                    </a>
+                    <a href="cadastro.html">
+                        Cadastro
+                    </a>
+                    <a class="linkAtivo" href="login.html" aria-current="page">
+                        Login
+                    </a>
+                </div>
+                <div class="usuario">
+                    <span class="iconeUsuario" aria-hidden="true">
+                    </span>
+                    <span>
+                        Visitante
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main class="paginaLogin">
+            <div class="painel painelLogin">
+                <p class="destaque">
+                    BEM-VINDO DE VOLTA
+                </p>
+                <h1>
+                    Entre na coleção
+                </h1>
+                <p class="descricaoFormulario">
+                    Preencha seu e-mail e sua senha.
+                </p>
+                <div>
+                    <label class="rotuloCampo" for="iptEmail">
+                        E-mail
+                    </label>
+                    <input class="campoFormulario" id="iptEmail" type="email" placeholder="seu@email.com">
+                    <label class="rotuloCampo" for="iptSenha">
+                        Senha
+                    </label>
+                    <input class="campoFormulario" id="iptSenha" type="password" autocomplete="off" placeholder="Sua senha">
+                    <div id="divMensagem" class="mensagem" aria-live="polite">
+                    </div>
+                    <button class="botao botaoLargo" type="button" onclick="validarLogin()">
+                        Entrar
+                    </button>
+                </div>
+                <p class="rodapeFormulario">
+                    Ainda não escolheu seu personagem?
+                    <a href="cadastro.html#personagens">
+                        Faça seu cadastro
+                    </a>
+                </p>
+            </div>
+        </main>
+        <footer class="rodape">
+            <div class="conteudo conteudoRodape">
+                <span class="marca">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </span>
+                <p>
+                    Gabriel Pereira Lima · SPTech · 2026
+                </p>
+            </div>
+        </footer>
+        <script src="js/validacoes.js">
+        </script>
+    </body>
+</html>

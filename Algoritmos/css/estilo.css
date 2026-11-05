@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    background-color: #0b0a0b;
+    color: #eee9e5;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+button, input {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus, button:focus, input:focus {
+    outline: 2px solid #f29098;
+    outline-offset: 3px;
+}
+
+.conteudo {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    background-color: #0d0b0c;
+    border-bottom: 1px solid #392225;
+}
+
+.conteudoCabecalho {
+    height: 86px;
+}
+
+.conteudoCabecalho .marca {
+    display: inline-block;
+    width: 510px;
+    vertical-align: middle;
+}
+
+.marca {
+    color: #f8f2ed;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.marca span {
+    color: #b74a50;
+}
+
+.menuNavegacao {
+    display: inline-block;
+    width: 430px;
+    vertical-align: middle;
+}
+
+.menuNavegacao a {
+    display: inline-block;
+    margin-right: 30px;
+    padding: 29px 0;
+    border-bottom: 2px solid transparent;
+    color: #bfb5b2;
+    font-size: 14px;
+}
+
+.menuNavegacao a:hover, .menuNavegacao .linkAtivo {
+    border-color: #ac3039;
+    color: #ffffff;
+}
+
+.usuario {
+    display: inline-block;
+    width: 160px;
+    vertical-align: middle;
+    text-align: right;
+    color: #d7ceca;
+    font-size: 14px;
+}
+
+.iconeUsuario {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #675c5c;
+    border-radius: 50%;
+    background-color: #242021;
+}
+
+.destaque {
+    color: #c65e63;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.apresentacao {
+    background: linear-gradient(110deg, #100c0e, #261014);
+    border-bottom: 1px solid #3b2124;
+}
+
+.conteudoApresentacao {
+    padding: 126px 0 137px;
+    text-align: center;
+}
+
+.apresentacao h1 {
+    margin-bottom: 18px;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.apresentacao h1 span {
+    color: #c65e63;
+}
+
+.descricaoApresentacao {
+    width: 540px;
+    margin: 0 auto 32px;
+    color: #c6bbb7;
+    font-size: 17px;
+}
+
+.botao {
+    display: inline-block;
+    text-align: center;
+    padding: 13px 21px;
+    border: 1px solid #9d3039;
+    background-color: #9d3039;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao span {
+    margin-left: 24px;
+}
+
+.botao:hover {
+    background-color: #bc424b;
+    border-color: #bc424b;
+}
+
+.botaoContorno {
+    border-color: #743238;
+    background-color: transparent;
+}
+
+.botaoContorno:hover {
+    background-color: #762b32;
+    border-color: #a43a42;
+}
+
+.botaoLargo {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.colecao {
+    padding: 100px 0;
+}
+
+.tituloSecao {
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.tituloSecao h1, .tituloSecao h2, .sobre h2 {
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.descricaoSecao {
+    color: #a89d99;
+}
+
+.jogo {
+    padding: 48px 0;
+    border-top: 1px solid #302629;
+}
+
+.jogoInvertido .retratoJogo {
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+.retratoJogo {
+    display: inline-block;
+    margin-right: 80px;
+    vertical-align: middle;
+    width: 425px;
+    height: 350px;
+    border: 1px solid #3c292d;
+    background-color: #171114;
+}
+
+.retratoJogo img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    object-fit: contain;
+}
+
+.textoJogo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 610px;
+}
+
+.textoJogo h3 {
+    margin-bottom: 14px;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.descricaoJogo {
+    color: #bdb2ae;
+}
+
+.protagonista {
+    margin: 25px 0;
+    color: #a55b60;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.protagonista span {
+    margin-left: 10px;
+    color: #e2d8d3;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.sobre {
+    padding: 90px 0;
+    border-top: 1px solid #3b2427;
+    background-color: #151012;
+}
+
+.conteudoSobre {
+    width: 740px;
+    text-align: center;
+}
+
+.descricaoSobre {
+    color: #bfb4b0;
+}
+
+.assinatura {
+    margin: 28px 0 0;
+    color: #cf777c;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.rodape {
+    border-top: 1px solid #302326;
+    background-color: #090809;
+}
+
+.conteudoRodape {
+    height: 100px;
+    padding: 32px 0;
+}
+
+.rodape .marca {
+    display: inline-block;
+    width: 660px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.rodape p {
+    display: inline-block;
+    width: 450px;
+    vertical-align: middle;
+    text-align: right;
+    margin: 0;
+    color: #8f8582;
+    font-size: 12px;
+}
+
+.paginaCadastro {
+    padding: 80px 0 100px;
+}
+
+.listaPersonagens {
+    text-align: center;
+}
+
+.opcaoPersonagem {
+    display: inline-block;
+    width: 260px;
+    margin: 0 7px;
+    vertical-align: top;
+}
+
+.seletorPersonagem {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto 12px;
+    accent-color: #d34a55;
+    cursor: pointer;
+}
+
+.cartaoPersonagem {
+    display: block;
+    padding-bottom: 20px;
+    border: 2px solid #3b2b2d;
+    background-color: #141012;
+    text-align: center;
+    cursor: pointer;
+}
+
+.retratoPersonagem {
+    display: block;
+    height: 260px;
+    background-color: #191215;
+}
+
+.imagemPersonagem {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    object-fit: contain;
+}
+
+.cartaoPersonagem:hover .imagemPersonagem {
+    filter: brightness(1.1);
+}
+
+.nomePersonagem {
+    display: block;
+    margin: 17px 0 3px;
+    font-family: Georgia, serif;
+    font-size: 21px;
+}
+
+.jogoPersonagem {
+    display: block;
+    color: #a78c8d;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.painel {
+    padding: 42px;
+    border: 1px solid #402b2e;
+    background-color: #151113;
+    box-shadow: 0 12px 35px #000000;
+}
+
+.painelCadastro {
+    width: 560px;
+    margin: 78px auto 0;
+}
+
+.painel h1, .painel h2 {
+    margin-bottom: 8px;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.descricaoFormulario {
+    margin-bottom: 30px;
+    color: #aaa09d;
+    font-size: 14px;
+}
+
+.rotuloCampo {
+    display: block;
+    margin: 20px 0 7px;
+    color: #e3dbd8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.campoFormulario {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #4b393c;
+    border-radius: 0;
+    background-color: #0d0b0c;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.campoFormulario::placeholder {
+    color: #7e7472;
+}
+
+.ajuda {
+    margin: 6px 0 0;
+    color: #9e9390;
+    font-size: 12px;
+}
+
+.mensagem {
+    margin-top: 16px;
+    color: #f19da3;
+    font-size: 13px;
+}
+
+.rodapeFormulario {
+    margin: 25px 0 0;
+    color: #a99f9b;
+    font-size: 13px;
+    text-align: center;
+}
+
+.rodapeFormulario a {
+    color: #e8888e;
+    text-decoration: underline;
+}
+
+.paginaLogin {
+    min-height: 650px;
+    padding: 80px 0;
+    background: linear-gradient(120deg, #0b0a0b, #1d1013);
+}
+
+.painelLogin {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.botaoFavoritosMenu {
+    padding: 29px 0;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    color: #bfb5b2;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botaoFavoritosMenu:hover {
+    border-color: #ac3039;
+    color: #ffffff;
+}
+
+.estrelaFavorito {
+    padding: 0 4px;
+    border: 0;
+    background-color: transparent;
+    color: #e5b86a;
+    font-size: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.estrelaFavorito:hover {
+    color: #ffe1a3;
+}
+
+.fundoFavoritos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: auto;
+    background-color: #000000bb;
+}
+
+.painelFavoritos {
+    width: 560px;
+    margin: 120px auto;
+}
+
+.itemFavorito {
+    padding: 14px 0;
+    border-bottom: 1px solid #402b2e;
+    color: #e5b86a;
+    font-size: 15px;
+}
+
+.removerFavorito {
+    margin-left: 12px;
+    padding: 5px 8px;
+    border: 1px solid #743238;
+    background-color: transparent;
+    color: #f19da3;
+    cursor: pointer;
+}
+
+.removerFavorito:hover {
+    background-color: #762b32;
+}

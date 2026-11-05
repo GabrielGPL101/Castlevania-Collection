@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Castlevania Collection | Início
+        </title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="conteudo conteudoCabecalho">
+                <a class="marca" href="index.html">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </a>
+                <div class="menuNavegacao">
+                    <a class="linkAtivo" href="index.html" aria-current="page">
+                        Início
+                    </a>
+                    <a href="cadastro.html">
+                        Cadastro
+                    </a>
+                    <a href="login.html">
+                        Login
+                    </a>
+                    <button class="botaoFavoritosMenu" type="button" onclick="abrirFavoritos()">Favoritos</button>
+                </div>
+                <div class="usuario">
+                    <span class="iconeUsuario" aria-hidden="true">
+                    </span>
+                    <span>
+                        Visitante
+                    </span>
+                </div>
+            </div>
+        </header>
+        <div id="divFavoritos"></div>
+        <main>
+            <div class="apresentacao">
+                <div class="conteudo conteudoApresentacao">
+                    <p class="destaque">
+                        QUATRO JOGOS · UMA COLEÇÃO
+                    </p>
+                    <h1>
+                        Castlevania
+                        <span>
+                            Collection
+                        </span>
+                    </h1>
+                    <p class="descricaoApresentacao">
+                        Explore castelos, descubra seus segredos e conheça quatro jornadas marcantes da série Castlevania.
+                    </p>
+                    <a class="botao" href="cadastro.html#personagens">
+                        Escolher personagem
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="conteudo colecao" id="jogos">
+                <div class="tituloSecao">
+                    <p class="destaque">
+                        EXPLORE A COLEÇÃO
+                    </p>
+                    <h2>
+                        Quatro jornadas, um legado
+                    </h2>
+                    <p class="descricaoSecao">
+                        Conheça os jogos e seus protagonistas.
+                    </p>
+                </div>
+                <article class="jogo">
+                    <div class="retratoJogo">
+                        <img src="imagens/alucard.png" alt="Alucard">
+                    </div>
+                    <div class="textoJogo">
+                        <p class="destaque">
+                            01 / PLAYSTATION 1
+                        </p>
+                        <h3>
+                            Symphony of the Night
+                            <button class="estrelaFavorito" id="estrelaJogo0" type="button" onclick="alternarFavorito(0)" aria-label="Favoritar ou desfavoritar Symphony of the Night">☆</button>
+                        </h3>
+                        <p class="descricaoJogo">
+                            Alucard retorna ao castelo de seu pai para investigar o desaparecimento de Richter Belmont. Explore seus corredores, encontre equipamentos e descubra novas habilidades para alcançar áreas antes inacessíveis.
+                        </p>
+                        <p class="protagonista">
+                            PROTAGONISTA
+                            <span>
+                                Alucard
+                            </span>
+                        </p>
+                        <a class="botao botaoContorno" href="https://romsfun.com/roms/playstation/castlevania-symphony-of-the-night-akumajou-dracula-x-gekka-no-yasoukyoku.html">
+                            Download
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="jogo jogoInvertido">
+                    <div class="textoJogo">
+                        <p class="destaque">
+                            02 / GAME BOY ADVANCE
+                        </p>
+                        <h3>
+                            Circle of the Moon
+                            <button class="estrelaFavorito" id="estrelaJogo1" type="button" onclick="alternarFavorito(1)" aria-label="Favoritar ou desfavoritar Circle of the Moon">☆</button>
+                        </h3>
+                        <p class="descricaoJogo">
+                            Nathan Graves entra no castelo de Drácula para resgatar seu mestre. Nesta aventura de exploração e combate, ele combina cartas para usar diferentes poderes enquanto enfrenta os perigos do castelo.
+                        </p>
+                        <p class="protagonista">
+                            PROTAGONISTA
+                            <span>
+                                Nathan Graves
+                            </span>
+                        </p>
+                        <a class="botao botaoContorno" href="https://romsfun.com/roms/game-boy-advance/castlevania-circle-of-the-moon.html">
+                            Download
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </a>
+                    </div>
+                
+                    <div class="retratoJogo">
+                        <img src="imagens/nathan.png" alt="Nathan Graves">
+                    </div>
+                </article>
+                <article class="jogo">
+                    <div class="retratoJogo">
+                        <img src="imagens/juste.png" alt="Juste Belmont">
+                    </div>
+                    <div class="textoJogo">
+                        <p class="destaque">
+                            03 / GAME BOY ADVANCE
+                        </p>
+                        <h3>
+                            Harmony of Dissonance
+                            <button class="estrelaFavorito" id="estrelaJogo2" type="button" onclick="alternarFavorito(2)" aria-label="Favoritar ou desfavoritar Harmony of Dissonance">☆</button>
+                        </h3>
+                        <p class="descricaoJogo">
+                            Juste Belmont parte em busca de sua amiga Lydie em um castelo cheio de mistérios. Com seu chicote e livros de magia, ele enfrenta monstros e desvenda os caminhos da fortaleza.
+                        </p>
+                        <p class="protagonista">
+                            PROTAGONISTA
+                            <span>
+                                Juste Belmont
+                            </span>
+                        </p>
+                        <a class="botao botaoContorno" href="https://romsfun.com/roms/game-boy-advance/castlevania-harmony-of-dissonance.html">
+                            Download
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="jogo jogoInvertido">
+                    <div class="textoJogo">
+                        <p class="destaque">
+                            04 / GAME BOY ADVANCE
+                        </p>
+                        <h3>
+                            Aria of Sorrow
+                            <button class="estrelaFavorito" id="estrelaJogo3" type="button" onclick="alternarFavorito(3)" aria-label="Favoritar ou desfavoritar Aria of Sorrow">☆</button>
+                        </h3>
+                        <p class="descricaoJogo">
+                            Durante um eclipse, Soma Cruz é levado ao castelo de Drácula. Ao explorar o lugar, ele pode absorver almas de inimigos para usar suas habilidades e descobrir a ligação entre ele e o castelo.
+                        </p>
+                        <p class="protagonista">
+                            PROTAGONISTA
+                            <span>
+                                Soma Cruz
+                            </span>
+                        </p>
+                        <a class="botao botaoContorno" href="https://romsfun.com/roms/game-boy-advance/castlevania-aria-of-sorrow-recolor.html">
+                            Download
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </a>
+                    </div>
+                
+                    <div class="retratoJogo">
+                        <img src="imagens/soma.png" alt="Soma Cruz">
+                    </div>
+                </article>
+            </div>
+            <div class="sobre" id="sobre">
+                <div class="conteudo conteudoSobre">
+                    <p class="destaque">
+                        POR TRÁS DA COLEÇÃO
+                    </p>
+                    <h2>
+                        Sobre o projeto
+                    </h2>
+                    <p class="descricaoSobre">
+                        Castlevania Collection é meu projeto acadêmico na SPTech, dedicado a uma franquia de que gosto. Meu interesse começou em 2020, durante a pandemia, com Harmony of Dissonance. Depois, finalizei a trilogia do Game Boy Advance e Symphony of the Night.
+                    </p>
+                    <p class="assinatura">
+                        Gabriel Pereira Lima
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <div class="conteudo conteudoRodape">
+                <span class="marca">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </span>
+                <p>
+                    Gabriel Pereira Lima · SPTech · 2026
+                </p>
+            </div>
+        </footer>
+        <script src="js/favoritos.js">
+        </script>
+    </body>
+</html>
