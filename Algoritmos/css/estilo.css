@@ -50,7 +50,7 @@ a:focus, button:focus, input:focus {
 
 .conteudoCabecalho .marca {
     display: inline-block;
-    width: 510px;
+    width: 440px;
     vertical-align: middle;
 }
 
@@ -66,7 +66,7 @@ a:focus, button:focus, input:focus {
 
 .menuNavegacao {
     display: inline-block;
-    width: 430px;
+    width: 500px;
     vertical-align: middle;
 }
 
@@ -509,4 +509,92 @@ a:focus, button:focus, input:focus {
 
 .removerFavorito:hover {
     background-color: #762b32;
+}
+
+.paginaQuiz {
+    width: 860px;
+    padding: 80px 0 100px;
+}
+
+.perguntaQuiz {
+    margin-bottom: 26px;
+    padding: 30px;
+}
+
+.perguntaQuiz h2 {
+    margin-bottom: 22px;
+    font-size: 26px;
+}
+
+.alternativaQuiz {
+    display: block;
+    margin-top: 10px;
+    padding: 12px 16px;
+    border: 1px solid #402b2e;
+    background-color: #0d0b0c;
+    color: #e3dbd8;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.alternativaQuiz:hover {
+    border-color: #a43a42;
+    background-color: #251316;
+}
+
+.alternativaQuiz input {
+    margin-right: 10px;
+    accent-color: #d34a55;
+}
+
+.acoesQuiz {
+    text-align: center;
+}
+
+.acoesQuiz .botao {
+    margin: 0 6px;
+}
+
+.resultadoQuiz {
+    margin-top: 30px;
+}
+
+.resultadoQuiz .painel h2 {
+    color: #e8888e;
+}
+
+.conteudoCabecalho {
+    width: 1160px;
+    position: relative;
+}
+
+.conteudoCabecalho .marca {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 280px;
+}
+
+.menuNavegacao {
+    display: block;
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menuNavegacao a, .botaoFavoritosMenu {
+    margin: 0 9px;
+    padding: 29px 0;
+}
+
+.usuario {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 160px;
+}
+
+.iconeUsuario {
+    margin-right: 0;
+    margin-left: 12px;
 }

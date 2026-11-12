@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Castlevania Collection | Quiz</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="conteudo conteudoCabecalho">
+                <a class="marca" href="index.html">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </a>
+                <div class="menuNavegacao">
+                    <a href="index.html">
+                        Início
+                    </a>
+                    <a href="cadastro.html">
+                        Cadastro
+                    </a>
+                    <a href="login.html">
+                        Login
+                    </a>
+                    <a class="linkAtivo" href="quiz.html" aria-current="page">
+                        Quiz
+                    </a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="usuario">
+                    <span>
+                        Visitante
+                    </span>
+                    <span class="iconeUsuario" aria-hidden="true">
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main class="conteudo paginaQuiz">
+            <div class="tituloSecao">
+                <p class="destaque">TESTE SEU CONHECIMENTO</p>
+                <h1>Quiz da coleção</h1>
+                <p class="descricaoSecao">Quatro perguntas, uma sobre cada jogo. Escolha uma alternativa por pergunta.</p>
+            </div>
+            <div class="painel perguntaQuiz">
+                <p class="destaque">01 / SYMPHONY OF THE NIGHT</p>
+                <h2>Quem Alucard procura ao retornar ao castelo de seu pai?</h2>
+                <label class="alternativaQuiz" for="iptPergunta1A">
+                    <input type="radio" id="iptPergunta1A" name="pergunta1" value="A" onchange="respostasQuiz[0] = 'A'; divResultadoQuiz.innerHTML = ''">
+                    A) Soma Cruz
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta1B">
+                    <input type="radio" id="iptPergunta1B" name="pergunta1" value="B" onchange="respostasQuiz[0] = 'B'; divResultadoQuiz.innerHTML = ''">
+                    B) Richter Belmont
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta1C">
+                    <input type="radio" id="iptPergunta1C" name="pergunta1" value="C" onchange="respostasQuiz[0] = 'C'; divResultadoQuiz.innerHTML = ''">
+                    C) Nathan Graves
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta1D">
+                    <input type="radio" id="iptPergunta1D" name="pergunta1" value="D" onchange="respostasQuiz[0] = 'D'; divResultadoQuiz.innerHTML = ''">
+                    D) Juste Belmont
+                </label>
+            </div>
+            <div class="painel perguntaQuiz">
+                <p class="destaque">02 / CIRCLE OF THE MOON</p>
+                <h2>O que Nathan Graves combina para usar diferentes poderes?</h2>
+                <label class="alternativaQuiz" for="iptPergunta2A">
+                    <input type="radio" id="iptPergunta2A" name="pergunta2" value="A" onchange="respostasQuiz[1] = 'A'; divResultadoQuiz.innerHTML = ''">
+                    A) Almas de inimigos
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta2B">
+                    <input type="radio" id="iptPergunta2B" name="pergunta2" value="B" onchange="respostasQuiz[1] = 'B'; divResultadoQuiz.innerHTML = ''">
+                    B) Livros de magia
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta2C">
+                    <input type="radio" id="iptPergunta2C" name="pergunta2" value="C" onchange="respostasQuiz[1] = 'C'; divResultadoQuiz.innerHTML = ''">
+                    C) Cartas
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta2D">
+                    <input type="radio" id="iptPergunta2D" name="pergunta2" value="D" onchange="respostasQuiz[1] = 'D'; divResultadoQuiz.innerHTML = ''">
+                    D) Anéis
+                </label>
+            </div>
+            <div class="painel perguntaQuiz">
+                <p class="destaque">03 / HARMONY OF DISSONANCE</p>
+                <h2>Qual amiga Juste Belmont procura no castelo?</h2>
+                <label class="alternativaQuiz" for="iptPergunta3A">
+                    <input type="radio" id="iptPergunta3A" name="pergunta3" value="A" onchange="respostasQuiz[2] = 'A'; divResultadoQuiz.innerHTML = ''">
+                    A) Lydie
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta3B">
+                    <input type="radio" id="iptPergunta3B" name="pergunta3" value="B" onchange="respostasQuiz[2] = 'B'; divResultadoQuiz.innerHTML = ''">
+                    B) Maria
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta3C">
+                    <input type="radio" id="iptPergunta3C" name="pergunta3" value="C" onchange="respostasQuiz[2] = 'C'; divResultadoQuiz.innerHTML = ''">
+                    C) Annette
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta3D">
+                    <input type="radio" id="iptPergunta3D" name="pergunta3" value="D" onchange="respostasQuiz[2] = 'D'; divResultadoQuiz.innerHTML = ''">
+                    D) Yoko
+                </label>
+            </div>
+            <div class="painel perguntaQuiz">
+                <p class="destaque">04 / ARIA OF SORROW</p>
+                <h2>Qual habilidade Soma Cruz usa para obter poderes dos inimigos?</h2>
+                <label class="alternativaQuiz" for="iptPergunta4A">
+                    <input type="radio" id="iptPergunta4A" name="pergunta4" value="A" onchange="respostasQuiz[3] = 'A'; divResultadoQuiz.innerHTML = ''">
+                    A) Combinar cartas
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta4B">
+                    <input type="radio" id="iptPergunta4B" name="pergunta4" value="B" onchange="respostasQuiz[3] = 'B'; divResultadoQuiz.innerHTML = ''">
+                    B) Usar o chicote dos Belmont
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta4C">
+                    <input type="radio" id="iptPergunta4C" name="pergunta4" value="C" onchange="respostasQuiz[3] = 'C'; divResultadoQuiz.innerHTML = ''">
+                    C) Ler livros de magia
+                </label>
+                <label class="alternativaQuiz" for="iptPergunta4D">
+                    <input type="radio" id="iptPergunta4D" name="pergunta4" value="D" onchange="respostasQuiz[3] = 'D'; divResultadoQuiz.innerHTML = ''">
+                    D) Absorver almas
+                </label>
+            </div>
+            <div class="acoesQuiz">
+                <button class="botao" type="button" onclick="corrigirQuiz()">Conferir respostas</button>
+                <a class="botao botaoContorno" href="quiz.html">Tentar novamente</a>
+            </div>
+            <div id="divResultadoQuiz" class="resultadoQuiz" aria-live="polite"></div>
+        </main>
+        <footer class="rodape">
+            <div class="conteudo conteudoRodape">
+                <span class="marca">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </span>
+                <p>
+                    Gabriel Pereira Lima · SPTech · 2026
+                </p>
+            </div>
+        </footer>
+        <script src="js/quiz.js"></script>
+    </body>
+</html>

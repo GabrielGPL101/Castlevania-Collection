@@ -1,0 +1,203 @@
+.paginaDashboard {
+    width: 1160px;
+    padding: 24px 0 20px;
+}
+
+.tituloDashboard {
+    margin-bottom: 20px;
+}
+
+.tituloDashboard h1 {
+    margin-bottom: 0;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.indicadoresDashboard {
+    margin-bottom: 16px;
+    font-size: 0;
+}
+
+.indicadorDashboard {
+    display: inline-block;
+    width: 278px;
+    height: 132px;
+    margin-right: 16px;
+    padding: 18px 20px;
+    vertical-align: top;
+    border: 1px solid #3d272d;
+    border-left: 3px solid #a33b48;
+    background-color: #191114;
+}
+
+.ultimoIndicador {
+    margin-right: 0;
+}
+
+.indicadorDashboard p {
+    margin-bottom: 2px;
+    color: #cbb9bd;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.indicadorDashboard strong {
+    display: inline-block;
+    margin-right: 12px;
+    color: #f5ebe5;
+    font-family: Georgia, serif;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.indicadorDashboard span {
+    display: block;
+    color: #a9979d;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.graficosDashboard {
+    font-size: 0;
+}
+
+.painelGrafico {
+    display: inline-block;
+    width: 376px;
+    height: 448px;
+    margin-right: 16px;
+    padding: 18px 20px;
+    vertical-align: top;
+    border: 1px solid #3d272d;
+    background-color: #151113;
+    font-size: 13px;
+}
+
+.ultimoGrafico {
+    width: 376px;
+    margin-right: 0;
+}
+
+.numeroGrafico {
+    margin-bottom: 5px;
+    color: #b77980;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+}
+
+.painelGrafico h2 {
+    margin-bottom: 3px;
+    color: #f1e6e1;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.descricaoGrafico {
+    margin-bottom: 12px;
+    line-height: 18px;
+    color: #ac9b9f;
+    font-size: 12px;
+}
+
+.painelGrafico canvas {
+    display: block;
+}
+
+.notaGrafico {
+    margin: 10px 0 0;
+    line-height: 18px;
+    color: #ac9b9f;
+    font-size: 12px;
+}
+
+.legendaFavoritos {
+    margin-top: 8px;
+}
+
+.legendaFavoritos p {
+    position: relative;
+    margin-bottom: 2px;
+    color: #d7cbd0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.legendaFavoritos strong {
+    position: absolute;
+    right: 0;
+    color: #f1e6e1;
+}
+
+.pontoLegenda {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.corSinfonia {
+    background-color: #c8ab80;
+}
+
+.corCirculo {
+    background-color: #9380b8;
+}
+
+.corHarmonia {
+    background-color: #bcb2c9;
+}
+
+.corAria {
+    background-color: #8ca9c2;
+}
+
+.corVerde {
+    background-color: #6bbd8e;
+}
+
+.corLaranja {
+    background-color: #e7a45d;
+}
+
+.corVermelha {
+    background-color: #df6b78;
+}
+
+.legendaQuiz {
+    margin-top: 8px;
+    font-size: 0;
+    line-height: 18px;
+}
+
+.legendaQuiz div {
+    display: inline-block;
+    width: 111px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.legendaQuiz strong {
+    color: #eee9e5;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.legendaQuiz p {
+    margin: 1px 0 0;
+    color: #d7cbd0;
+    font-size: 12px;
+}
+
+.legendaQuiz .detalheSituacao {
+    color: #ac9b9f;
+    font-size: 12px;
+}
+
+.paginaPainel .conteudoRodape {
+    height: 70px;
+    padding: 20px 0;
+}

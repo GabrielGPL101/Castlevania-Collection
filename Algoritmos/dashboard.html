@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Castlevania Collection | Dashboard</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+    </head>
+    <body class="paginaPainel">
+        <header class="cabecalho">
+            <div class="conteudo conteudoCabecalho">
+                <a class="marca" href="index.html">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </a>
+                <div class="menuNavegacao">
+                    <a href="index.html">
+                        Início
+                    </a>
+                    <a href="cadastro.html">
+                        Cadastro
+                    </a>
+                    <a href="login.html">
+                        Login
+                    </a>
+                    <a href="quiz.html">
+                        Quiz
+                    </a>
+                    <a class="linkAtivo" href="dashboard.html" aria-current="page">Dashboard</a>
+                </div>
+                <div class="usuario">
+                    <span>
+                        Visitante
+                    </span>
+                    <span class="iconeUsuario" aria-hidden="true">
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main class="conteudo paginaDashboard">
+            <div class="tituloDashboard">
+                <h1>Painel</h1>
+            </div>
+            <div class="indicadoresDashboard">
+                <div class="indicadorDashboard">
+                    <p>USUÁRIOS CADASTRADOS</p>
+                    <strong id="divTotalUsuarios">0</strong>
+                    <span>Contas na coleção</span>
+                </div>
+                <div class="indicadorDashboard">
+                    <p>FAVORITOS REGISTRADOS</p>
+                    <strong id="divTotalFavoritos">0</strong>
+                    <span>Escolhas entre os quatro jogos</span>
+                </div>
+                <div class="indicadorDashboard">
+                    <p>TENTATIVAS NO QUIZ</p>
+                    <strong id="divTotalTentativas">0</strong>
+                    <span>Inclui novas tentativas</span>
+                </div>
+                <div class="indicadorDashboard ultimoIndicador">
+                    <p>PARTICIPANTES DO QUIZ</p>
+                    <strong id="divParticipantes">0</strong>
+                    <span id="divParticipacao">0% dos usuários</span>
+                </div>
+            </div>
+            <div class="graficosDashboard">
+                <div class="painelGrafico">
+                    <p class="numeroGrafico">01 / CADASTRO</p>
+                    <h2>Personagens escolhidos</h2>
+                    <p class="descricaoGrafico">Quantidade de usuários por personagem</p>
+                    <canvas id="graficoPersonagens" width="334" height="260" aria-label="Quantidade de escolhas de Alucard, Nathan Graves, Juste Belmont e Soma Cruz"></canvas>
+                    <p class="notaGrafico">Cada conta escolhe um personagem.</p>
+                </div>
+                <div class="painelGrafico">
+                    <p class="numeroGrafico">02 / PREFERÊNCIAS</p>
+                    <h2>Favoritos por jogo</h2>
+                    <p class="descricaoGrafico">Distribuição dos favoritos registrados</p>
+                    <canvas class="graficoRosca" id="graficoFavoritos" width="334" height="188" aria-label="Distribuição de favoritos entre os quatro jogos"></canvas>
+                    <div class="legendaFavoritos">
+                        <p><span class="pontoLegenda corSinfonia"></span>Symphony of the Night<strong id="divFavoritosSinfonia">0</strong></p>
+                        <p><span class="pontoLegenda corCirculo"></span>Circle of the Moon<strong id="divFavoritosCirculo">0</strong></p>
+                        <p><span class="pontoLegenda corHarmonia"></span>Harmony of Dissonance<strong id="divFavoritosHarmonia">0</strong></p>
+                        <p><span class="pontoLegenda corAria"></span>Aria of Sorrow<strong id="divFavoritosAria">0</strong></p>
+                    </div>
+                    <p class="notaGrafico" id="divNotaFavoritos">Uma conta pode favoritar mais de um jogo.</p>
+                </div>
+                <div class="painelGrafico ultimoGrafico">
+                    <p class="numeroGrafico">03 / CONHECIMENTO</p>
+                    <h2>Acertos no quiz</h2>
+                    <p class="descricaoGrafico">Quantidade de tentativas por pontuação</p>
+                    <canvas id="graficoQuiz" width="334" height="210" aria-label="Quantidade de tentativas com zero, um, dois, três e quatro acertos"></canvas>
+                    <div class="legendaQuiz">
+                        <div><span class="pontoLegenda corVerde"></span><strong id="divQuizVerde">0</strong><p>3–4 acertos</p><span class="detalheSituacao">Bom resultado</span></div>
+                        <div><span class="pontoLegenda corLaranja"></span><strong id="divQuizLaranja">0</strong><p>2 acertos</p><span class="detalheSituacao">Atenção</span></div>
+                        <div><span class="pontoLegenda corVermelha"></span><strong id="divQuizVermelha">0</strong><p>0–1 acerto</p><span class="detalheSituacao">Revisar</span></div>
+                    </div>
+                    <p class="notaGrafico" id="divNotaQuiz">A classificação vale para cada tentativa.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <div class="conteudo conteudoRodape">
+                <span class="marca">
+                    Castlevania
+                    <span>
+                        Collection
+                    </span>
+                </span>
+                <p>
+                    Gabriel Pereira Lima · SPTech · 2026
+                </p>
+            </div>
+        </footer>
+        <script src="js/bibliotecas/chart.umd.js"></script>
+        <script src="js/dashboard.js"></script>
+    </body>
+</html>
