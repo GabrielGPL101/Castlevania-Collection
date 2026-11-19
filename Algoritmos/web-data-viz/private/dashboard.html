@@ -5,6 +5,11 @@
         <title>Castlevania Collection | Dashboard</title>
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/dashboard.css">
+        <script>
+            if (!sessionStorage.CHAVE_SESSAO) {
+                window.location.replace('/login.html');
+            }
+        </script>
     </head>
     <body class="paginaPainel">
         <header class="cabecalho">
@@ -19,50 +24,47 @@
                     <a href="index.html">
                         Início
                     </a>
-                    <a href="cadastro.html">
-                        Cadastro
-                    </a>
-                    <a href="login.html">
-                        Login
-                    </a>
                     <a href="quiz.html">
                         Quiz
                     </a>
                     <a class="linkAtivo" href="dashboard.html" aria-current="page">Dashboard</a>
                 </div>
                 <div class="usuario">
-                    <span>
+                    <span class="nomeUsuario" id="nomeUsuario">
                         Visitante
                     </span>
-                    <span class="iconeUsuario" aria-hidden="true">
+                    <span class="iconeUsuario" id="divIconeUsuario" aria-hidden="true">
                     </span>
+                    <span id="localBotaoSair"></span>
                 </div>
             </div>
         </header>
         <main class="conteudo paginaDashboard">
             <div class="tituloDashboard">
                 <h1>Painel</h1>
+                <div id="modoPainel"></div>
             </div>
+            <div id="divMensagemPainel" class="mensagem" aria-live="polite"></div>
             <div class="indicadoresDashboard">
                 <div class="indicadorDashboard">
                     <p>USUÁRIOS CADASTRADOS</p>
-                    <strong id="divTotalUsuarios">0</strong>
+                    <strong id="divTotalUsuarios">—</strong>
                     <span>Contas na coleção</span>
                 </div>
                 <div class="indicadorDashboard">
                     <p>FAVORITOS REGISTRADOS</p>
-                    <strong id="divTotalFavoritos">0</strong>
+                    <strong id="divTotalFavoritos">—</strong>
                     <span>Escolhas entre os quatro jogos</span>
                 </div>
                 <div class="indicadorDashboard">
                     <p>TENTATIVAS NO QUIZ</p>
-                    <strong id="divTotalTentativas">0</strong>
+                    <strong id="divTotalTentativas">—</strong>
                     <span>Inclui novas tentativas</span>
                 </div>
                 <div class="indicadorDashboard ultimoIndicador">
                     <p>PARTICIPANTES DO QUIZ</p>
-                    <strong id="divParticipantes">0</strong>
-                    <span id="divParticipacao">0% dos usuários</span>
+                    <strong id="divParticipantes">—</strong>
+                    <span id="divParticipacao">Consultando o banco</span>
                 </div>
             </div>
             <div class="graficosDashboard">
@@ -77,7 +79,7 @@
                     <p class="numeroGrafico">02 / PREFERÊNCIAS</p>
                     <h2>Favoritos por jogo</h2>
                     <p class="descricaoGrafico">Distribuição dos favoritos registrados</p>
-                    <canvas class="graficoRosca" id="graficoFavoritos" width="334" height="188" aria-label="Distribuição de favoritos entre os quatro jogos"></canvas>
+                    <canvas id="graficoFavoritos" width="334" height="188" aria-label="Distribuição de favoritos entre os quatro jogos"></canvas>
                     <div class="legendaFavoritos">
                         <p><span class="pontoLegenda corSinfonia"></span>Symphony of the Night<strong id="divFavoritosSinfonia">0</strong></p>
                         <p><span class="pontoLegenda corCirculo"></span>Circle of the Moon<strong id="divFavoritosCirculo">0</strong></p>
@@ -113,7 +115,11 @@
                 </p>
             </div>
         </footer>
+        <script src="js/sessao.js"></script>
         <script src="js/bibliotecas/chart.umd.js"></script>
         <script src="js/dashboard.js"></script>
+        <script>
+            carregarSessao(false);
+        </script>
     </body>
 </html>

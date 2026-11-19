@@ -14,6 +14,9 @@ var app = express();
 
 var indexRouter = require("./src/routes/index");
 var usuarioRouter = require("./src/routes/usuarios");
+var favoritoRouter = require("./src/routes/favoritos");
+var quizRouter = require("./src/routes/quiz");
+var dashboardRouter = require("./src/routes/dashboard");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -23,6 +26,9 @@ app.use(cors());
 
 app.use("/", indexRouter);
 app.use("/usuarios", usuarioRouter);
+app.use("/favoritos", favoritoRouter);
+app.use("/quiz", quizRouter);
+app.use("/dashboard", dashboardRouter);
 
 app.listen(PORTA_APP, function () {
     console.log(`Servidor em funcionamento: http://${HOST_APP}:${PORTA_APP}`);

@@ -201,3 +201,11 @@
     height: 70px;
     padding: 20px 0;
 }
+
+
+.modoPainel {
+    display: inline-block;
+    margin-top: 8px;
+    color: #e0a5ad;
+    text-decoration: underline;
+}

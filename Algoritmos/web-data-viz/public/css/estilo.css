@@ -45,13 +45,16 @@ a:focus, button:focus, input:focus {
 }
 
 .conteudoCabecalho {
+    width: 1160px;
     height: 86px;
+    position: relative;
 }
 
 .conteudoCabecalho .marca {
-    display: inline-block;
-    width: 440px;
-    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 280px;
 }
 
 .marca {
@@ -65,14 +68,14 @@ a:focus, button:focus, input:focus {
 }
 
 .menuNavegacao {
-    display: inline-block;
-    width: 500px;
-    vertical-align: middle;
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .menuNavegacao a {
     display: inline-block;
-    margin-right: 30px;
+    margin: 0 9px;
     padding: 29px 0;
     border-bottom: 2px solid transparent;
     color: #bfb5b2;
@@ -85,9 +88,11 @@ a:focus, button:focus, input:focus {
 }
 
 .usuario {
-    display: inline-block;
-    width: 160px;
-    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 220px;
+    white-space: nowrap;
     text-align: right;
     color: #d7ceca;
     font-size: 14px;
@@ -95,7 +100,7 @@ a:focus, button:focus, input:focus {
 
 .iconeUsuario {
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 12px;
     vertical-align: middle;
     width: 40px;
     height: 40px;
@@ -447,6 +452,7 @@ a:focus, button:focus, input:focus {
 }
 
 .botaoFavoritosMenu {
+    margin: 0 9px;
     padding: 29px 0;
     border: 0;
     border-bottom: 2px solid transparent;
@@ -563,38 +569,32 @@ a:focus, button:focus, input:focus {
     color: #e8888e;
 }
 
-.conteudoCabecalho {
-    width: 1160px;
-    position: relative;
+.nomeUsuario {
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
 }
 
-.conteudoCabecalho .marca {
-    position: absolute;
-    left: 0;
-    top: 22px;
-    width: 280px;
+.imagemIcone {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
-.menuNavegacao {
-    display: block;
-    width: 650px;
-    margin: 0 auto;
-    text-align: center;
+.botaoSair {
+    margin-left: 8px;
+    padding: 5px 8px;
+    border: 1px solid #72424b;
+    background-color: transparent;
+    color: #eee9e5;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
-.menuNavegacao a, .botaoFavoritosMenu {
-    margin: 0 9px;
-    padding: 29px 0;
-}
-
-.usuario {
-    position: absolute;
-    right: 0;
-    top: 22px;
-    width: 160px;
-}
-
-.iconeUsuario {
-    margin-right: 0;
-    margin-left: 12px;
+.botaoSair:hover {
+    background-color: #3d272d;
 }

@@ -20,24 +20,15 @@
                     <a class="linkAtivo" href="index.html" aria-current="page">
                         Início
                     </a>
-                    <a href="cadastro.html">
-                        Cadastro
-                    </a>
-                    <a href="login.html">
-                        Login
-                    </a>
-                    <button class="botaoFavoritosMenu" type="button" onclick="abrirFavoritos()">Favoritos</button>
-                    <a href="quiz.html">
-                        Quiz
-                    </a>
-                    <a href="dashboard.html">Dashboard</a>
+                    <span id="opcoesMenu"></span>
                 </div>
                 <div class="usuario">
-                    <span>
+                    <span class="nomeUsuario" id="nomeUsuario">
                         Visitante
                     </span>
-                    <span class="iconeUsuario" aria-hidden="true">
+                    <span class="iconeUsuario" id="divIconeUsuario" aria-hidden="true">
                     </span>
+                    <span id="localBotaoSair"></span>
                 </div>
             </div>
         </header>
@@ -57,12 +48,7 @@
                     <p class="descricaoApresentacao">
                         Explore castelos, descubra seus segredos e conheça quatro jornadas marcantes da série Castlevania.
                     </p>
-                    <a class="botao" href="cadastro.html#personagens">
-                        Escolher personagem
-                        <span aria-hidden="true">
-                            →
-                        </span>
-                    </a>
+                    <span id="botaoPersonagem"></span>
                 </div>
             </div>
             <div class="conteudo colecao" id="jogos">
@@ -87,7 +73,7 @@
                         </p>
                         <h3>
                             Symphony of the Night
-                            <button class="estrelaFavorito" id="estrelaJogo0" type="button" onclick="alternarFavorito(0)" aria-label="Favoritar ou desfavoritar Symphony of the Night">☆</button>
+                            <span id="localEstrela0"></span>
                         </h3>
                         <p class="descricaoJogo">
                             Alucard retorna ao castelo de seu pai para investigar o desaparecimento de Richter Belmont. Explore seus corredores, encontre equipamentos e descubra novas habilidades para alcançar áreas antes inacessíveis.
@@ -113,7 +99,7 @@
                         </p>
                         <h3>
                             Circle of the Moon
-                            <button class="estrelaFavorito" id="estrelaJogo1" type="button" onclick="alternarFavorito(1)" aria-label="Favoritar ou desfavoritar Circle of the Moon">☆</button>
+                            <span id="localEstrela1"></span>
                         </h3>
                         <p class="descricaoJogo">
                             Nathan Graves entra no castelo de Drácula para resgatar seu mestre. Nesta aventura de exploração e combate, ele combina cartas para usar diferentes poderes enquanto enfrenta os perigos do castelo.
@@ -146,7 +132,7 @@
                         </p>
                         <h3>
                             Harmony of Dissonance
-                            <button class="estrelaFavorito" id="estrelaJogo2" type="button" onclick="alternarFavorito(2)" aria-label="Favoritar ou desfavoritar Harmony of Dissonance">☆</button>
+                            <span id="localEstrela2"></span>
                         </h3>
                         <p class="descricaoJogo">
                             Juste Belmont parte em busca de sua amiga Lydie em um castelo cheio de mistérios. Com seu chicote e livros de magia, ele enfrenta monstros e desvenda os caminhos da fortaleza.
@@ -172,7 +158,7 @@
                         </p>
                         <h3>
                             Aria of Sorrow
-                            <button class="estrelaFavorito" id="estrelaJogo3" type="button" onclick="alternarFavorito(3)" aria-label="Favoritar ou desfavoritar Aria of Sorrow">☆</button>
+                            <span id="localEstrela3"></span>
                         </h3>
                         <p class="descricaoJogo">
                             Durante um eclipse, Soma Cruz é levado ao castelo de Drácula. Ao explorar o lugar, ele pode absorver almas de inimigos para usar suas habilidades e descobrir a ligação entre ele e o castelo.
@@ -226,7 +212,11 @@
                 </p>
             </div>
         </footer>
+        <script src="js/sessao.js"></script>
         <script src="js/favoritos.js">
+        </script>
+        <script>
+            carregarSessao(true);
         </script>
     </body>
 </html>
